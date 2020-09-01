@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsnd --transpile-only --inspect --ignore-watch node_modules --respawn src/server.ts",
     "start": "node dist/server.js",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
   "dependencies": {
     "date-fns": "^2.16.0",
     "express": "^4.17.1",
+    "pg": "^8.3.3",
+    "typeorm": "^0.2.25",
     "uuidv4": "^6.2.3"
   }
 }
